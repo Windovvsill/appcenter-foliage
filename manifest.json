@@ -1,0 +1,17 @@
+{
+  "name": "Appcenter App Switcher",
+  "description": "Switch between apps",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://appcenter.ms/orgs/Tonit-Media/apps/*"
+      ],
+      "js": [
+        "content-script.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
